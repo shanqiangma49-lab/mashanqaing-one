@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* 清除元素的默认内外边距 */
+  * {
+    margin: 0;
+    padding: 0;
+    /* 让所有元素的边框都按照标准的盒子模型计算宽度和高度 */
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ccc;
+  }
+
+  .cart img {
+    width: 160px;
+    height: 160px;
+    /* 图片的上边距 */
+    margin-top: 40px;
+  }
+
+  .cart {
+    width: 234px;
+    height: 320px;
+    /* 背景颜色 */
+    background-color: #f5f5f5;
+    /* 上边距100px，居中显示 */
+    margin: 100px auto;
+    /* 文字居中显示 */
+    text-align: center;
+    tansition: all .4s;
+  }
+
+  .cart .title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 18px;
+  }
+
+  .cart .desc {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /* 单行文本溢出省略号 */
+    /* 溢出隐藏 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 强制文字不换行 */
+    white-space: nowrap;
+
+  }
+
+  .cart .time {
+    font-size: 14px;
+    color: #ff6700;
+    margin-top: 10px;
+  }
+
+  .cart:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<body>
+  <div class="cart">
+    <img src="./img/IMG_6368.jpeg" alt="">
+    <h3 class="title"> 芜湖地铁战</h3>
+    <p class="desc">谁也不是到明天会怎样｜也不知道什么时候就是最后一面｜我们之能在这 moment 中，用生命诠释出我们的情感。</p>
+    <p class="time">2024-12-30</p>
+  </div>
+</body>
+
+</html>
